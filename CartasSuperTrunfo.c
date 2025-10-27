@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
     printf("Cadastro de cartas do Super Trunfo\n");
     printf("Digite os dados da primeira carta:\n");
     printf("Digite o Estado da carta: ");
@@ -24,6 +25,8 @@ int main() {
     printf("Digite o numero de pontos turisticos da carta: ");
     int pontosTuristicos;
     scanf("%d", &pontosTuristicos);
+    float densidadePopulacional = (float) populacao / area;
+    float indicePibPerCapita = (float) pib / populacao;
     printf("Cadastro da primeira carta concluido com sucesso!\n");
     printf("Carta 1 \n");
     printf("Estado: %s\n", estado);
@@ -33,6 +36,8 @@ int main() {
     printf("Area: %.2f\n", area);
     printf("PIB: %.2f\n", pib);
     printf("Pontos Turisticos: %d\n", pontosTuristicos);
+    printf("Densidade Populacional: %.2f\n", densidadePopulacional);
+    printf("Indice PIB per Capita: %.2f\n", indicePibPerCapita);
     printf("Digite os dados da segunda carta:\n");
     printf("Digite o Estado da carta: ");
     char estado2[50];
@@ -55,6 +60,8 @@ int main() {
     printf("Digite o numero de pontos turisticos da carta: ");
     int pontosTuristicos2;
     scanf("%d", &pontosTuristicos2);
+    float densidadePopulacional2 = (float) populacao2 / area2;
+    float indicePibPerCapita2 = (float) pib2 / populacao2;
     printf("Cadastro da segunda carta concluido com sucesso!\n");
     printf("Carta 2 \n");
     printf("Estado: %s\n", estado2);
@@ -64,5 +71,7 @@ int main() {
     printf("Area: %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos Turisticos: %d\n", pontosTuristicos2);
+    printf("Densidade Populacional: %.2f\n", densidadePopulacional2);
+    printf("Indice PIB per Capita: %.2f\n", indicePibPerCapita2);
     return 0;
 }
