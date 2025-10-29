@@ -63,7 +63,7 @@ int main()
     scanf("%d", &pontosTuristicos2);
     float densidadePopulacional2 = (float)populacao2 / area2;
     float indicePibPerCapita2 = (float)pib2 / populacao2;
-    float superPoder2 = (float) populacao2 + area2 + pib2 + pontosTuristicos2 + densidadePopulacional2 + indicePibPerCapita2;
+    float superPoder2 = (float)populacao2 + area2 + pib2 + pontosTuristicos2 + densidadePopulacional2 + indicePibPerCapita2;
     printf("Cadastro da segunda carta concluido com sucesso!\n");
     printf("Carta 2 \n");
     printf("Estado: %s\n", estado2);
@@ -75,24 +75,31 @@ int main()
     printf("Pontos Turisticos: %d\n", pontosTuristicos2);
     printf("Densidade Populacional: %.2f\n", densidadePopulacional2);
     printf("Indice PIB per Capita: %.2f\n", indicePibPerCapita2);
-    
+
     printf("***************************************************\n");
     printf("Comparação de Cartas:\n");
     printf("Comparação de população entre as cartas:\n");
-    printf("Carta 1: %lu\n", populacao>populacao2);
+    printf("Carta 1: %lu\n", populacao > populacao2);
     printf("Comparação de área entre as cartas:\n");
-    printf("Carta 1: %lu\n", area>area2);
+    printf("Carta 1: %lu\n", area > area2);
     printf("Comparação de PIB entre as cartas:\n");
-    printf("Carta 1: %lu\n", pib>pib2);
+    printf("Carta 1: %lu\n", pib > pib2);
     printf("Comparação de pontos turísticos entre as cartas:\n");
-    printf("Carta 1: %lu\n", pontosTuristicos>pontosTuristicos2);
+    printf("Carta 1: %lu\n", pontosTuristicos > pontosTuristicos2);
     printf("Comparação de densidade populacional entre as cartas:\n");
-    printf("Carta 1: %lu\n", densidadePopulacional<densidadePopulacional2);
+    printf("Carta 1: %lu\n", densidadePopulacional < densidadePopulacional2);
     printf("Comparação de índice PIB per capita entre as cartas:\n");
-    printf("Carta 1: %lu\n", indicePibPerCapita>indicePibPerCapita2);
+    printf("Carta 1: %lu\n", indicePibPerCapita > indicePibPerCapita2);
     printf("Comparação de super poder entre as cartas:\n");
-    printf("Carta 1: %lu\n", superPoder>superPoder2);
+    printf("Carta 1: %lu\n", superPoder > superPoder2);
+    printf("***************************************************\n");
 
+    if (populacao > populacao2)
+        printf("Carta 1 vence na população!\n");
+    else if (populacao < populacao2)
+        printf("Carta 2 vence na população!\n");
+    else
+        printf("Empate na população!\n");
 
     return 0;
 }
